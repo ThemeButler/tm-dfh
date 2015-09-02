@@ -1,0 +1,38 @@
+/**
+* Slide Nav
+*
+* Overrides slidenav.less, located in /wp-content/themes/tm-dfh/lib/api/uikit/src/less/components/slidenav.less
+*/
+
+@slidenav-width: 60px;
+@slidenav-height: 100%;
+@slidenav-color: rgba(50,50,50,0.4);
+@slidenav-font-size: 60px;
+@slidenav-line-height: @slidenav-height;
+@slidenav-previous-icon: "\f104";
+@slidenav-next-icon: "\f105";
+@slidenav-hover-color: rgba(50,50,50,0.7);
+@slidenav-active-color: rgba(50,50,50,0.9);
+@slidenav-position-previous: 20px;
+@slidenav-position-next: @slidenav-position-previous;
+@slidenav-contrast-color: rgba(0,0,0,0.8);
+@slidenav-contrast-hover-color: rgba(0,0,0,1);
+@slidenav-contrast-active-color: rgba(255,255,255,0.9);
+
+.uk-slidenav-position {
+  .uk-slidenav {
+    background-color: rgba(0,0,0,0.1);
+    top: 0;
+    margin-top: 0;
+    left: 0;
+  }
+  .uk-slidenav-next {
+    right: 0;
+    left: auto;
+    background-color: rgba(0,0,0,0.2);
+  }
+}
+.uk-slidenav:before {
+  position: relative;
+  top: 40%;
+}
